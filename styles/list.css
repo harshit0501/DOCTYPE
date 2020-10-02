@@ -1,26 +1,31 @@
-h2 {
-  color: #cf1124;
+body,html{
+  background-color: #232323;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  background-image: url('/home/harshit/Desktop/images/space.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
 }
 
-p {
-  color: #243b53;
-}
-
-/* #container {
-    max-width: 800px;
+#container {
+    display: grid;
     margin: 20px auto;
-} */
+    grid-template-columns: 1.33fr 1.33fr 1.33fr;
+    grid-gap: 2rem;
+    padding: 0 10%;
+    
+
+}
 
 .card {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  border-radius: 5px;
-  border-top: solid 4px #cf1124;
-  height: 382px;
+  border: solid 4px #cf1124;
+  height: 492px;
   float: left;
-  /* margin: 0 auto; */
-  margin: 1.66%;
-  /* position: relative; */
-  width: 380px;
+  color: white;
+  border-radius: 5%;
 }
 
 .content {
@@ -32,6 +37,7 @@ p {
 .description {
   font-size: 1.5rem;
   display: flexbox;
+  color: white;
 }
 
 .header {
@@ -48,16 +54,54 @@ p {
   font-size: 20px;
 }
 
+.label p {
+  color: white;
+}
+
 .price {
   margin-top: 0;
   width: 0;
 }
 
 .btn {
-  color: white;
+  color: black;
   background-color: #cf1124;
   outline: none;
   border: none;
   padding: 10px;
   font-weight: bold;
+}
+@media only screen and (max-width: 1500px) {
+  #container {
+    grid-template-columns: 2fr 2fr;
+  }
+  body {
+    margin: 0 2%;
+  }
+}
+
+@media only screen and (max-width: 1080px) {
+  #container {
+    grid-template-columns: 2fr 2fr;
+    /* grid-template-rows: 1.33fr 1.33fr 1.33fr; */
+    padding: 0 2%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  #container {
+    grid-template-columns: 1fr;
+    padding: 0 10%;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  #container {
+    grid-template-columns: 1fr;
+    padding: 0 1%;
+  }
+  body {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
 }
