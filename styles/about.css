@@ -209,3 +209,10 @@ a:hover {
     width: 1170px;
   }
 }
+
+#gesports a{
+  text-decoration: underline;
+}
+#gesports a:hover{
+  color: #666666;
+}
