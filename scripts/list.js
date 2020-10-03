@@ -100,3 +100,27 @@ buttonFamily.addEventListener("click", function () {
     price[i].style.color = fa_color;
   }
 });
+function Amount() {
+  let amount;
+  for (let k = 0; k < 5; k++) {
+    buttony[k].addEventListener("click", function () {
+      if (ans === 0) {
+        amount = in_year[k];
+      } else if (ans == 1) {
+        amount = co_year[k];
+      } else if (ans == 2) {
+        amount = fa_year[k];
+      }
+      
+    });
+    buttonm[k].addEventListener("click", function () {
+      if (ans === 0) {
+        amount = in_month[k];
+      } else if (ans == 1) {
+        amount = co_month[k];
+      } else if (ans == 2) {
+        amount = fa_month[k];
+      }
+    });
+  }
+}
