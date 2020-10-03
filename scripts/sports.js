@@ -1,20 +1,20 @@
 const sports = [
     {
-        sport: 'BastketBall',
+        sport: 'Bastketball',
         image: '../resources/sports/basketball.jpeg',
         isTrainer: true,
         isGalaxoEarth: true
     },
     {
         sport: 'Lawn Tennis',
-        image: '../resources/sports/lawntennis.jpg',
-        isTrainer: false,
+        image: '../resources/sports/lawntennis.jpeg',
+        isTrainer: true,
         isGalaxoEarth: true
     },
     {
         sport: 'Table Tennis',
-        image: '../resources/sports/table-tennis.jpg',
-        isTrainer: false,
+        image: '../resources/sports/table-tennis.jpeg',
+        isTrainer: true,
         isGalaxoEarth: true
     },
     {
@@ -24,7 +24,7 @@ const sports = [
         isGalaxoEarth: true
     },
     {
-        sport: 'Indoor Jogging Track',
+        sport: 'Jogging Track',
         image: '../resources/sports/track.jpg',
         isTrainer: false,
         isGalaxoEarth: true
@@ -36,14 +36,14 @@ const sports = [
         isGalaxoEarth: false
     },
     {
-        sport: 'FootBall',
-        image: '../resources/sports/football.jpeg',
-        isTrainer: false,
-        isGalaxoEarth: false,
+        sport: 'Football',
+        image: '../resources/sports/football.jpg',
+        isTrainer: true,
+        isGalaxoEarth: false
     },
     {
         sport: 'Gym',
-        image: '../resources/sports/gym.jpg',
+        image: '../resources/sports/gym.jpeg',
         isTrainer: true,
         isGalaxoEarth: true
     },
@@ -72,11 +72,77 @@ const sports = [
         isGalaxoEarth: false
     },
     {
-        sport: 'Out-of-this-World Wrestling',
+        sport: 'Space Wrestle',
         image: '../resources/sports/wrestling.jpeg',
+        isTrainer: true,
+        isGalaxoEarth: false
+    },
+    {
+        sport: 'Golf',
+        image: '../resources/sports/golf.jpeg',
+        isTrainer: true,
+        isGalaxoEarth: false
+    },
+    {
+        sport: 'Badminton',
+        image: '../resources/sports/badminton.jpeg',
+        isTrainer: true,
+        isGalaxoEarth: true
+    },
+    {
+        sport: 'Baseball',
+        image: '../resources/sports/baseball.jpeg',
         isTrainer: false,
         isGalaxoEarth: false
-    }
+    },
+    {
+        sport: 'Boxing',
+        image: '../resources/sports/boxing.jpeg',
+        isTrainer: true,
+        isGalaxoEarth: false
+    },
+    {
+        sport: 'Volleyball',
+        image: '../resources/sports/volleyball.jpeg',
+        isTrainer: false,
+        isGalaxoEarth: false
+    },
+    {
+        sport: 'hockey',
+        image: '../resources/sports/hockey.jpeg',
+        isTrainer: true,
+        isGalaxoEarth: false
+    },
+    {
+        sport: 'rugby',
+        image: '../resources/sports/rugby.jpeg',
+        isTrainer: true,
+        isGalaxoEarth: false
+    },
+    {
+        sport: 'ice hockey',
+        image: '../resources/sports/icehockey.jpeg',
+        isTrainer: false,
+        isGalaxoEarth: false
+    },
+    {
+        sport: 'archery',
+        image: '../resources/sports/archery.jpeg',
+        isTrainer: true,
+        isGalaxoEarth: false
+    },
+    {
+        sport: 'yoga',
+        image: '../resources/sports/yoga.jpg',
+        isTrainer: true,
+        isGalaxoEarth: false
+    },
+    {
+        sport: 'skateboarding',
+        image: '../resources/sports/skateboarding.jpg',
+        isTrainer: true,
+        isGalaxoEarth: false
+    },
 ];
 
 const header = document.querySelectorAll('.header');
@@ -92,18 +158,18 @@ for(i = 0; i<sports.length;i++) {
     header[i].textContent = sports[i].sport;
     image[i].src = sports[i].image;
     if(sports[i].isTrainer) {
-        trainer[i].textContent = '  Trainer is available';
+        trainer[i].textContent = '  Trainer available';
         usericon[i].style.color = green;
     } else {
-        trainer[i].textContent = '  Trainer is not available';
+        trainer[i].textContent = '  Trainer not available';
         usericon[i].style.color = red;
     }
 
     if (sports[i].isGalaxoEarth) {
-      galaxoEarth[i].textContent = "  GalaxoEarth is available";
+      galaxoEarth[i].textContent = "  GalaxoEarth available";
       earthicon[i].style.color = green;
     } else {
-      galaxoEarth[i].textContent = "  GalaxoEarth is not available";
+      galaxoEarth[i].textContent = "  GalaxoEarth not available";
       earthicon[i].style.color = red;
     }
 

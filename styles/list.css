@@ -2,8 +2,8 @@ body,
 html {
   /* margin-left: 5rem;
   margin-right: 5rem; */
-  background-image: url("../resources/space.jpg");
-  /* background-color: #111111; */
+  /* background-image: url("../resources/space.jpg"); */
+  background-color: #111111;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
