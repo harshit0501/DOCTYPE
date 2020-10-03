@@ -88,8 +88,8 @@ body, html {
   display: flex;
   width: 800px;
   height: 32px;
-  border-radius: 3px;
-  border: 2px solid #cf9611;
+  border-radius: 32px;
+  border: 4px solid #cf9611;
   padding: 5px 10px;
   font-size: 18px;
   background-color: #101010;
@@ -104,6 +104,7 @@ body, html {
   display: flex;
   justify-content: center;
 }
+
 
 #searchWrapper::after {
   position: absolute;
