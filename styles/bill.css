@@ -5,7 +5,7 @@ html {
   padding: 0;
   margin: 0;
   /* background-color: #111111; */
-  background-color: #fff;
+  background-color: #000;
   font-family: "Roboto", sans-serif;
   color: white;
   font-family: 'Nunito Sans', sans-serif;
@@ -21,8 +21,8 @@ html {
 
 .nav-button {
   background-color: transparent;
-  color: black;
-  border: 2px solid black;
+  color: white;
+  border: 2px solid white;
   outline: none;
   border-radius: 1em;
   margin-right: 20px;
@@ -31,14 +31,14 @@ html {
 }
 
 .nav-button a {
-  color: black;
+  color: white;
   text-decoration: none;
 }
 
 .bill {
   width: 600px;
-  border: 2px solid #222222;
-  color: black;
+  border: 2px solid #fff;
+  color: white;
   display:  block;
   margin: 0 auto;
   margin-top: 15px;
@@ -57,6 +57,13 @@ html {
 }
 .billNames p {
   margin: 1px;
+}
+
+.bill a{
+  color: steelblue;
+}
+.bill a:hover{
+  color: #aaa;
 }
 
 .hide{
