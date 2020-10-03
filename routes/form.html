@@ -7,7 +7,10 @@
       src="https://kit.fontawesome.com/1c98d8187e.js"
       crossorigin="anonymous"
     ></script>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="../styles/form.css" />
     <title>Form</title>
   </head>
@@ -15,7 +18,7 @@
     <nav class="navbar">
       <ul class="nav-left">
         <li><i class="fas fa-swimmer"></i></li>
-        <li class="nav-brand">GalaxoFit</li>
+        <li class="nav-brand"><a href="../index.html">GalaxoFit</a></li>
       </ul>
       <ul class="nav-right">
         <li><a href="../routes/about.html">About Us</a></li>
@@ -25,21 +28,51 @@
     </nav>
 
     <div class="nav-things">
-        <button class="nav-button"> <a href="listpage.html">Go Back</a> </button>
+      <button class="nav-button"><a href="listpage.html">Go Back</a></button>
     </div>
 
-    <form action="">
-        <h1>Enter details</h1>
-        <input type="text" placeholder="Name of Member (Buyer)" required>
-        <input type="text" placeholder="Name of Member" class="hide">
-        <input type="text" placeholder="Name of Member" class="hide">
-        <input type="text" placeholder="Name of Member" class="hide">
-        <input type="text" placeholder="Contact Number" required>
-        <input type="text" placeholder="Email ID" required>
-        <input type="text" placeholder="Settlement Number" required>
-        <input type="text" placeholder="Planet" required>
-        <input type="submit" class="submit">
+    <form action="#">
+      <h1>Enter details</h1>
+      <input type="text" placeholder="Your Name" id="name" required />
+      <input type="text" placeholder="Name of 2nd Member" id="name1" class="hide"/>
+      <input type="text" placeholder="Name of 3rd Member" id="name2" class="hide" />
+      <input type="text" placeholder="Name of 4th Member" id="name3" class="hide" />
+      <input type="text" placeholder="Contact Number" id="contact" required />
+      <input type="text" placeholder="Email ID" id="email" required />
+      <input type="text" placeholder="House Number" id="houseN" required />
+      <input type="text" placeholder="Settlement Number" id="settleN" required />
+      <input type="text" placeholder="Planet" id="planet" required />
+      <input type="submit" class="submit" />
     </form>
-    <script src="../scripts/Bill.js"></script>
+
+    <div class="bill">
+      <h1>PACKAGE BILL</h1>
+      <h3>Buyer's Details :</h3>
+      <p>
+        Name : <span id="billName"></span> <br />
+        Contact Number : <span id="billContact"></span><br />
+        Email ID : <span id="billEmail"></span><br />
+        Address : House <span id="billHouseN"></span>, Settlement
+        <span id="billSettleN"></span>, <span id="billPlanet"></span>
+      </p>
+      <h3>Name Of Members : </h3>
+      <div class="billNames">
+        <p id="billNamee"></p>
+        <p id="billName1" class="hide" >Tushar Maroo</p>
+        <p id="billName2" class="hide" >Tushar Maroo</p>
+        <p id="billName3" class="hide" >Tushar Maroo</p>
+      </div>
+      <h3>Package Selected : <span id="billPackage">Gold</span> </h3>
+      <p>
+        Package Starts on : <span id="billStartDate"></span> <br>
+        Package Ends on : <span id="billEndDate"></span><br>
+        Package Cost :     $<span id="billCost"></span> <br>
+        Service Tax (2%) : $<span id="billSerTax"></span> <br>
+        GST (5%) :         $<span id="billGST"></span> <br>
+        <strong>Total Amount To Be Paid : $<span id="billTotal"></span></strong> <br>
+        To view details of your package <a href="listpage.html">click here</a>.
+      </p>
+    </div>
+    <script src="../scripts/form.js"></script>
   </body>
 </html>

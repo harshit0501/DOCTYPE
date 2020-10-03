@@ -5,6 +5,7 @@ html {
   padding: 0;
   margin: 0;
   background-color: #111111;
+  /* background-color: #fff; */
   font-family: 'Roboto', sans-serif;
   color: white;
 }
@@ -29,11 +30,11 @@ html {
     justify-content: center;
   }
   
-  a {
+  .navbar a {
     text-decoration: none;
     color: #101010;
   }
-  a:hover {
+  .navbar a:hover {
     color: #fff;
   }
   .nav-right {
@@ -96,6 +97,7 @@ html {
 
   form{
       display: flex;
+      /* display: none; */
       flex-direction: column;
       width: 800px;
       margin: 0 auto;
@@ -132,6 +134,31 @@ html {
       border: 2px solid white;
   }
 
+  .bill{
+    width: 600px;
+    border: 2px solid #222222;
+    color: black;
+    display: none;
+    /* display: block; */
+    margin: 0 auto;
+    margin-top: 15px;
+    padding-left: 15px;
+    padding-right: 3px;
+  }
+  .bill h1{
+    text-align: center;
+  }
+  .bill h3{
+    margin-bottom: 0px;
+  }
+  .bill p{
+    line-height: 150%;
+    margin-top: 5px;
+  }
+  .billNames p{
+    margin: 1px;
+  }
+
   @media (max-width: 870px){
     form{
       width: 700px;
@@ -149,5 +176,19 @@ html {
     }
     form input{
       font-size: 1rem;
+    }
+    .bill p{
+      font-size: 0.8rem;
+    }
+    .bill h3{
+      font-size: 1rem;
+    }
+    .bill h1{
+      font-size: 1.4rem;
+    }
+  }
+  @media (max-width: 676px){
+    .bill{
+      width: 80%;
     }
   }
