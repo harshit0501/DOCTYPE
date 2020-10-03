@@ -119,6 +119,12 @@ a:hover {
   color: #101010;
 }
 
+hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
 @media (max-width: 56.25em) {
   #landing-header {
     font-size: 1.5rem;

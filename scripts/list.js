@@ -1,6 +1,6 @@
-let in_color = "#E60000";
-let co_color = "#FFFF33";
-let fa_color = "#55FFFF";
+let in_color = "#C0FF80";
+let co_color = "#09F098";
+let fa_color = "#40C040";
 const data = [
   {
     name: "Platinum",

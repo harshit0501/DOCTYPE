@@ -25,7 +25,7 @@ html {
 
 .card {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  border: solid 4px #cf1124;
+  border: solid 4px #C0FF80;
   height: 492px;
   float: left;
   color: white;
@@ -69,7 +69,7 @@ html {
 .price {
   margin-top: 0;
   transition: color 0.6s;
-  color: #cf1124;
+  color: #C0FF80;
   /* width: 0; */
 }
 
@@ -79,7 +79,7 @@ h2 {
 
 .btn {
   color: black;
-  background-color: #cf1124;
+  background-color: #C0FF80;
   outline: none;
   border: none;
   padding: 10px;
@@ -94,7 +94,7 @@ h2 {
 
 .btny {
   color: black;
-  background-color: #cf1124;
+  background-color: #C0FF80;
   outline: none;
   border: none;
   padding: 10px;
@@ -151,16 +151,16 @@ h2 {
 }
 
 .buttons .in_active {
-color: #e60000;
-border: 2px solid #e60000;
+color: #C0FF80;
+border: 2px solid #C0FF80;
 }
 .buttons .co_active {
-color: #FFFF33;
-border: 2px solid #FFFF33;
+color: #09F098;
+border: 2px solid #09F098;
 }
 .buttons .fa_active {
-color: #55ffff;
-border: 2px solid #55ffff;
+color: #40C040;
+border: 2px solid #40C040;
 }
 
 @media only screen and (max-width: 1500px) {
