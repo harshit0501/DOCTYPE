@@ -1,32 +1,31 @@
-let in_color = "#CF1124";
+let in_color = "#E60000";
 let co_color = "#FFFF33";
-let fa_color = "#0066CC";
+let fa_color = "#55FFFF";
 const data = [
   {
     name: "Platinum",
-    description: "The package includes all sports. GalaxoEarth included.",
+    description: "The package includes all sports and Spa facility. GalaxoEarth included."
   },
   {
     name: "Gold",
-    description:
-      "This Package includes the sports with only Earth Like gravity",
+    description: "The package includes all sports except Swimming and Spa. GalaxoEarth included"
   },
   {
-    name: "Bronze",
-    description: "This Package includes the sports with only normal gravity",
+    name: "Silver",
+    description: "The package includes all sports except Swimming and Spa. GalxoEarth not included"
+  },
+  {
+    name: "Gym and swim Gold",
+    description: "The package includes Gym, Spa and Swimming. GalaxoEarth not included",
+  },
+  {
+    name: "gym and swim",
+    description: "The package includes Gym, Spa and Swimming. GalaxoEarth not included",
   },
   {
     name: "Gym-only",
-    description: "This package includes Gym and spa",
-  },
-  {
-    name: "swim and gym",
-    description: "This package includes Gym, spa and swimming pool",
-  },
-  {
-    name: "kids package",
-    description: "This package includes football, basketball, and badminton",
-  },
+    description: "The package includes Gym Only. GalaxoEarth included.",
+  }
 ];
 let in_month = [120, 120, 120, 120, 120, 120];
 let in_year = [1300, 1300, 1300, 1300, 1300, 1300];
@@ -34,6 +33,7 @@ let co_month = [220, 220, 220, 220, 220, 220];
 let co_year = [2400, 2400, 2400, 2400, 2400, 2400];
 let fa_month = [440, 440, 440, 440, 440, 440];
 let fa_year = [4800, 4800, 4800, 4800, 4800, 4800];
+let ans = 0;
 const header = document.querySelectorAll(".header");
 const price = document.querySelectorAll(".price");
 const month = document.querySelectorAll("#month");
@@ -62,6 +62,7 @@ buttonCouple.addEventListener("click", function () {
   buttonCouple.classList.add("co_active");
   buttonIndividual.classList.remove("in_active");
   buttonFamily.classList.remove("fa_active");
+  ans = 1;
   for (i = 0; i < 6; i++) {
     month[i].textContent = `${co_month[i]}`;
     year[i].textContent = `${co_year[i]}`;
@@ -75,6 +76,7 @@ buttonIndividual.addEventListener("click", function () {
   buttonCouple.classList.remove("co_active");
   buttonIndividual.classList.add("in_active");
   buttonFamily.classList.remove("fa_active");
+  ans = 0;
   for (i = 0; i < 6; i++) {
     month[i].textContent = `${in_month[i]}`;
     year[i].textContent = `${in_year[i]}`;
@@ -88,6 +90,7 @@ buttonFamily.addEventListener("click", function () {
   buttonCouple.classList.remove("co_active");
   buttonIndividual.classList.remove("in_active");
   buttonFamily.classList.add("fa_active");
+  ans = 2;
   for (i = 0; i < 6; i++) {
     month[i].textContent = `${fa_month[i]}`;
     year[i].textContent = `${fa_year[i]}`;
