@@ -136,24 +136,18 @@ hr {
   .container h1{
     font-size: 2.25rem;
   }
-  /* 900px */
 }
 
 @media (max-width: 800px) {
-  /* 760px */
   .navbar {
     display: none;
   }
   .nav-buttons {
     display: inline;
   }
-  /* #landing-header {
-    height: 100%;
-  } */
 }
 
 @media (max-width: 40.625em) {
-  /* 650px */
   #landing-header {
     font-size: 1.3rem;
   }
@@ -163,21 +157,12 @@ hr {
 }
 
 @media (max-width: 30.625em) {
-  /* 490px */
   #landing-header {
     font-size: 1rem;
   }
-  /* .nav-buttons a {
-    font-size: small;
-  }
-  .nav-buttons {
-    padding: 0.1em 0.3em;
-    border-radius: 0.3em;
-  } */
 }
 
 @media (max-width: 420px) {
-  /* 380px */
   #landing-header {
     font-size: 0.8rem;
   }
@@ -197,7 +182,6 @@ hr {
 }
 
 @media (max-width: 20em) {
-  /* 305px */
   .nav-buttons {
     padding: 0em 0.3em;
     border-radius: 0.3em;

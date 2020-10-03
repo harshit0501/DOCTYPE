@@ -1,5 +1,4 @@
 body, html {
-  /* background-image: url("../resources/space1.jpg"); */
   background-color: #101010 !important;
   background-size: cover;
   background-position: center;
@@ -48,7 +47,6 @@ body, html {
   height: 452px;
   float: left;
   color:white;
-  /* color: white; */
   border-radius: 5%;
 }
 
@@ -63,7 +61,6 @@ body, html {
   padding-top: 20px;
   text-transform: capitalize;
   max-width: 240px;
-  /* width: 40%; */
   margin: 0 auto;
   font-size: 1.8rem;
   text-align: center;
@@ -133,7 +130,6 @@ body, html {
 @media only screen and (max-width: 1080px) {
   #container {
     grid-template-columns: 2fr 2fr;
-    /* grid-template-rows: 1.33fr 1.33fr 1.33fr; */
     padding: 0 8%;
   }
   #searchWrapper{
@@ -200,7 +196,6 @@ body, html {
 }
 
 @media (max-width: 780px) {
-  /* 760px */
   .nav-things {
     display: flex;
   }

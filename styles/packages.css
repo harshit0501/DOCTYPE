@@ -1,8 +1,5 @@
 body,
 html {
-  /* margin-left: 5rem;
-  margin-right: 5rem; */
-  /* background-image: url("../resources/space.jpg"); */
   background-color: #101010 !important;
   background-size: cover;
   background-position: center;
@@ -71,7 +68,6 @@ html {
   margin-top: 0;
   transition: color 0.6s;
   color: #C0FF80;
-  /* width: 0; */
 }
 
 h2 {
@@ -168,15 +164,11 @@ border: 2px solid #40C040;
   #container {
     grid-template-columns: 2fr 2fr;
   }
-  /* body {
-    margin: 0 2%;
-  } */
 }
 
 @media only screen and (max-width: 1080px) {
   #container {
     grid-template-columns: 2fr 2fr;
-    /* grid-template-rows: 1.33fr 1.33fr 1.33fr; */
     padding: 0 2%;
   }
 }
@@ -193,14 +185,9 @@ border: 2px solid #40C040;
     grid-template-columns: 1fr;
     padding: 0 5%;
   }
-  /* body {
-    margin-left: 2rem;
-    margin-right: 2rem;
-  } */
 }
 
 @media (max-width: 780px) {
-  /* 760px */
   .nav-things {
     display: flex;
   }
