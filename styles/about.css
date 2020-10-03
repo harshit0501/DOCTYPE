@@ -5,7 +5,7 @@ html {
   padding: 0;
   margin: 0;
   font-family: 'Roboto', sans-serif;
-  background-color: #232323;
+  background-color:#afafaf;
 }
 .navbar {
   background-color: rgba(200, 200, 200, 0.5);
@@ -116,7 +116,7 @@ a:hover {
   margin-bottom: 10vh;
   line-height: 170%;
   font-size: 1.25rem;
-  color: white;
+  color: #101010;
 }
 
 @media (max-width: 56.25em) {

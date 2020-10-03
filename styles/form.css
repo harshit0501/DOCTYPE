@@ -83,6 +83,7 @@ html {
   
   .nav-button a{
     color: white;
+    text-decoration: none;
   }
 
   @media (max-width: 780px) {
@@ -101,11 +102,12 @@ html {
       flex-direction: column;
       width: 800px;
       margin: 0 auto;
-      margin-top: 10%;
+      margin-top: 5%;
       border: 5px solid white;
       padding-bottom: 4%;
       padding-top: 2%;
       border-radius: 10px;
+      margin-bottom: 40px;
   }
 
   form h1{
