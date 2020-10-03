@@ -1,6 +1,6 @@
 body, html {
   /* background-image: url("../resources/space1.jpg"); */
-  background-color: #333333;
+  background-color: #101010 !important;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -8,7 +8,7 @@ body, html {
 
 #container {
   display: grid;
-  margin: 20px auto;
+  margin: 30px auto;
   grid-template-columns: 1.33fr 1.33fr 1.33fr;
   grid-gap: 2rem;
   padding: 0 10%;
@@ -89,7 +89,7 @@ body, html {
 #searchBar {
   outline: none;
   display: flex;
-  width: 100%;
+  width: 800px;
   height: 32px;
   border-radius: 3px;
   border: 2px solid #cf9611;
@@ -98,12 +98,14 @@ body, html {
   background-color: black;
   color: white;
   font-family: 'Nunito Sans', sans-serif;
+  text-align: center;
 }
 
 #searchWrapper {
   position: relative;
-  padding: 0 10%;
+  margin: 0 auto;
   display: flex;
+  justify-content: center;
 }
 
 #searchWrapper::after {
