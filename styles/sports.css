@@ -165,3 +165,29 @@ body, html {
     display: flex;
   }
 }
+
+#searchBar {
+    outline: none;
+    
+    display: flex;
+    width: 97%;
+    height: 32px;
+    border-radius: 3px;
+    border: 1px solid #cf9611;
+    padding: 5px 10px;
+    font-size: 18px;
+    background-color: black;
+    color: white;
+
+}
+
+#searchWrapper {
+    position: relative;
+}
+
+#searchWrapper::after {
+    content: '🔍';
+    position: absolute;
+    top: 7px;
+    right: 15px;
+}
