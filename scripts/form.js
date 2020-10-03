@@ -22,7 +22,7 @@ const form = document.querySelector("form");
 const body = document.querySelector("body");
 const bill = document.querySelector(".bill");
 
-form.addEventListener("submit",async () => {
+form.addEventListener("submit",() => {
     body.style.backgroundColor = "white";
     form.style.display = "none";
     const Name = document.querySelector("#name").value;
