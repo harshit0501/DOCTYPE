@@ -5,7 +5,7 @@ html {
   padding: 0;
   margin: 0;
   /* background-color: #111111; */
-  background-color: #000;
+  background-color: #101010;
   font-family: "Roboto", sans-serif;
   color: white;
   font-family: 'Nunito Sans', sans-serif;
@@ -19,20 +19,26 @@ html {
   padding-top: 15px;
 }
 
-.nav-button {
+.nav-button{
   background-color: transparent;
   color: white;
-  border: 2px solid white;
+  border: none;
   outline: none;
-  border-radius: 1em;
   margin-right: 20px;
   font-size: x-large;
   font-weight: bold;
 }
 
-.nav-button a {
+.fa-undo-alt{
+  font-size: 0.8em;
+}
+
+.nav-button a{
   color: white;
   text-decoration: none;
+}
+.nav-button a:hover{
+  color: #aaa;
 }
 
 .bill {

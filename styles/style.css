@@ -54,10 +54,12 @@ a:hover {
 
 .nav-brand {
   font-size: 2.5rem;
+  margin-left: 0 !important;
 }
 
-.fa-swimmer {
+.fa-grav {
   font-size: 2.5rem;
+  margin-left: 15px;
 }
 
 #landing-header {

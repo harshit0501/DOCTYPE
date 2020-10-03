@@ -3,7 +3,7 @@ html {
   /* margin-left: 5rem;
   margin-right: 5rem; */
   /* background-image: url("../resources/space.jpg"); */
-  background-color: #000;
+  background-color: #101010 !important;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
