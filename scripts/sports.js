@@ -177,21 +177,27 @@ function build(data) {
   let i;
   for (i = 0; i < data.length; i++) {
     let trainer = data[i].isTrainer
-      ? "Trainer is available"
-      : "Trainer is not available";
+      ? "Trainer available"
+      : "Trainer not available";
     let earth = data[i].isGalaxoEarth
-      ? "GalaxoEarth is available"
-      : "GalaxoEarth is not available";
+      ? "GalaxoEarth available"
+      : "GalaxoEarth not available";
+    let trainerColor = data[i].isTrainer
+      ? "lightgreen"
+      : "red";
+    let earthColor = data[i].isGalaxoEarth
+      ? "lightgreen"
+      : "red";
     let card = `<div class="card">
         <h3 class="header">${data[i].sport}</h3>
         <div class="content">
           <img class="image" src="${data[i].image}" alt="" />
           <div class="label">
             <div class="t">
-              <span><i class="fas fa-user"></i><span class="trainer"></span> ${trainer} </span>
+              <span><i class="fas fa-user" style="color: ${trainerColor};"></i><span class="trainer"></span> ${trainer} </span>
           </div>
           <div class="e">
-              <span><i class="fas fa-globe-asia"></i><span class="earth"></span> ${earth}</span>
+              <span><i class="fas fa-globe-asia" style="color: ${earthColor};"></i><span class="earth"></span> ${earth}</span>
           </div>
           </div>
         </div>`;
@@ -199,35 +205,3 @@ function build(data) {
   }
 }
 
-// const header = document.querySelectorAll('.header');
-// const image = document.querySelectorAll('.image');
-// const trainer = document.querySelectorAll('.trainer');
-// const galaxoEarth = document.querySelectorAll('.earth');
-// const usericon = document.querySelectorAll('.fa-user');
-// const earthicon = document.querySelectorAll('.fa-globe-asia');
-// let i;
-// const green = 'lightgreen' ;
-// const red= "red";
-// for(i = 0; i<sports.length;i++) {
-//     header[i].textContent = sports[i].sport;
-//     image[i].src = sports[i].image;
-//     if(sports[i].isTrainer) {
-//         trainer[i].textContent = '  Trainer available';
-//         usericon[i].style.color = green;
-//     } else {
-//         trainer[i].textContent = '  Trainer not available';
-//         usericon[i].style.color = red;
-//     }
-
-//     if (sports[i].isGalaxoEarth) {
-//       galaxoEarth[i].textContent = "  GalaxoEarth available";
-//       earthicon[i].style.color = green;
-//     } else {
-//       galaxoEarth[i].textContent = "  GalaxoEarth not available";
-//       earthicon[i].style.color = red;
-//     }
-
-    
-
-//     galaxoEarth[i].textContent = (sports[i].isGalaxoEarth)? '  GalaxoEarth is available': '  GalaxoEarth is not available';
-// }
