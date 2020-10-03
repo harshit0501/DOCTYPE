@@ -100,7 +100,8 @@ buttonFamily.addEventListener("click", function () {
     price[i].style.color = fa_color;
   }
 });
-function Amount() {
+
+function SendAmount() {
   let amount;
   for (let k = 0; k < 5; k++) {
     buttony[k].addEventListener("click", function () {
@@ -111,7 +112,10 @@ function Amount() {
       } else if (ans == 2) {
         amount = fa_year[k];
       }
-      
+      localStorage.setItem("amount", amount);
+      localStorage.setItem("package", ans);
+      localStorage.setItem("subscription", 0);
+       window.location.href = "./form.html";
     });
     buttonm[k].addEventListener("click", function () {
       if (ans === 0) {
@@ -121,6 +125,12 @@ function Amount() {
       } else if (ans == 2) {
         amount = fa_month[k];
       }
+      localStorage.setItem("amount", amount);
+      localStorage.setItem("package", ans);
+      localStorage.setItem("subscription", 1);
+      window.location.href = "./form.html";
     });
   }
 }
+  
+SendAmount();
