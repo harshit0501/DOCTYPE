@@ -1,2 +1,3 @@
 # IEEE-EXODUS
-##Landing
+## Landing
+* Dont miss the background slideshow.
