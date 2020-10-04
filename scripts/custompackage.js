@@ -183,7 +183,7 @@ const book = document.querySelector("#cuBook");
 book.addEventListener("click", (e) => {
   if(totalCost == 0) {
     e.preventDefault();
-    alert('Please Select an Item');
+    alert('Please Select An Item');
   } else {
     localStorage.setItem("amount", totalCost * multiplier);
     localStorage.setItem("package", noMember);
