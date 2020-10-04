@@ -192,18 +192,18 @@ const displayr = document.querySelectorAll(".cuInputs");
 
 cuExpand.addEventListener("click",() => {
   cuExpand.classList.add("hide")
-  cuFooter.style.height = "40%";
+  cuFooter.style.maxHeight = "280px";
 })
 display.addEventListener("click",() => {
   cuExpand.classList.remove("hide")
-  cuFooter.style.height = "0";
+  cuFooter.style.maxHeight = "0";
 });
 
 for(let m=0; m<displayr.length; m++)
 {
   displayr[m].addEventListener("click",() => {
     cuExpand.classList.remove("hide")
-    cuFooter.style.height = "0";
+    cuFooter.style.maxHeight = "0";
   });
 }
 
