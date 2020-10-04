@@ -1,3 +1,20 @@
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #444; 
+}
+
+::-webkit-scrollbar-thumb {
+  background: #fff;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #aaa;
+}
+
 body,
 html {
   height: 100%;
@@ -91,24 +108,25 @@ a:hover {
   display: flex;
   margin: 0 auto;
   justify-content: center;
-  background-color:  rgba(200, 200, 200, 0.5);
+  background-color:  transparent;
 }
 
 .nav-buttons {
   padding: 0.5em 0.7em;
-  border: 0.12em solid #000;
+  border: 0.12em solid #fff;
   border-radius: 0.7em;
   font-size: large;
   font-weight: bold;
   background-color: transparent;
   display: none;
   margin: 5px 5px;
+  margin-top: 10px;
 }
 .nav-buttons a {
-  color: #000;
+  color: #fff;
 }
 .nav-buttons a:hover {
-  color: rgba(0, 0, 0, 0.7);
+  color: #AAA;
 }
 
 
@@ -162,7 +180,7 @@ hr {
   }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 426px) {
   #landing-header {
     font-size: 0.8rem;
   }
