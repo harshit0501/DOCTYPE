@@ -136,6 +136,16 @@ let memPlu = "";
 let monPlu = "";
 memberInp.addEventListener("change", () => {
   noMember = memberInp.value;
+  if(noMember>4) 
+  {
+    noMember=4;
+    memberInp.value=4;
+  }
+  if(noMember<4) 
+  {
+    noMember=1;
+    memberInp.value=1;
+  }
   if (noMember > 1) memPlu = "s";
   else memPlu = "";
   if (noMonth > 1) monPlu = "s";
@@ -146,6 +156,16 @@ memberInp.addEventListener("change", () => {
 });
 monthInp.addEventListener("change", () => {
   noMonth = monthInp.value;
+  if(noMonth>12) 
+  {
+    noMonth=12;
+    monthInp.value=12;
+  }
+  if(noMonth<1) 
+  {
+    noMonth=1;
+    monthInp.value=1;
+  }
   if (noMember > 1) memPlu = "s";
   else memPlu = "";
   if (noMonth > 1) monPlu = "s";
