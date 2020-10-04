@@ -134,12 +134,13 @@ hr.style {
   display: none;
   margin: 5px 5px;
   margin-top: 10px;
+  outline: none;
 }
 .nav-buttons a {
   color: #fff;
 }
 .nav-buttons a:hover {
-  color: #AAA;
+  color: #101010;
 }
 
 

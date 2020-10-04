@@ -1,5 +1,21 @@
-input[type=number]::-webkit-inner-spin-button {
+input[type="number"]::-webkit-inner-spin-button {
   opacity: 1;
+}
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #444; 
+}
+
+::-webkit-scrollbar-thumb {
+  background: #fff;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #aaa;
 }
 
 .cuContainer {
@@ -19,7 +35,7 @@ input[type=number]::-webkit-inner-spin-button {
   /* margin-bottom: 500px; */
 }
 
-.cuInputs p{
+.cuInputs p {
   color: white;
 }
 
@@ -67,7 +83,7 @@ input[type=number]::-webkit-inner-spin-button {
 }
 
 #cuBook {
-  margin-bottom: 500px;
+  margin-bottom: 200px;
   display: block;
   text-align: center;
 }
@@ -100,9 +116,7 @@ input[type=number]::-webkit-inner-spin-button {
   width: 200px;
 }
 
-.cuContainer .hide {
-  display: none;
-}
+
 .cuContainer .cuCost {
   padding-right: 10px;
 }
@@ -112,9 +126,13 @@ input[type=number]::-webkit-inner-spin-button {
   left: 0;
   bottom: 0;
   width: 100%;
+  height: 0px;
   background-color: #aaa;
+  opacity: 0.9;
   color: #101010;
   display: flex;
+  /* display: none; */
+  transition: height 1s,transform 1s;
 }
 #cuFooter h2 {
   float: left;
@@ -132,6 +150,29 @@ input[type=number]::-webkit-inner-spin-button {
 .title {
   margin-left: 8px;
   margin-right: 8px;
+}
+
+#cuExpand {
+  width: 90px;
+  height: 90px;
+  border-radius: 45px;
+  /* border: 2px solid white; */
+  border: none;
+  background-color: rgba(16, 16, 16, 0.9);
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  color: white;
+  margin: 0 auto;
+  outline: none;
+  top: 92%;
+  left: 50%;
+  margin-top: -45px;
+  margin-left: -45px;
+}
+
+.hide {
+  display: none !important;
 }
 
 @media (max-width: 1160px) {
@@ -154,6 +195,16 @@ input[type=number]::-webkit-inner-spin-button {
   }
   .cuContainer li {
     font-size: 1rem;
+  }
+  #cuExpand{
+    width: 70px;
+    height: 70px;
+    border-radius: 35px;
+    margin-top: -35px;
+    margin-left: -35px;
+  }
+  #cuExpand h3{
+    font-size: small;
   }
 }
 @media (max-width: 698px) {

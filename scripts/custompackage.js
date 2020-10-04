@@ -67,6 +67,9 @@ const cuPackTotCost = document.querySelector("#cuPackTotCost");
 const monthInp = document.querySelector("#cuNoMonth");
 const memberInp = document.querySelector("#cuNoMember");
 const cuCostText = document.querySelector("#cuCostText");
+const cuExpand = document.querySelector("#cuExpand");
+const cuFooter = document.querySelector("#cuFooter");
+
 let totalCost = 0;
 let packSel = [
   false,
@@ -141,7 +144,7 @@ memberInp.addEventListener("change", () => {
     noMember=4;
     memberInp.value=4;
   }
-  if(noMember<4) 
+  if(noMember<1) 
   {
     noMember=1;
     memberInp.value=1;
@@ -184,3 +187,23 @@ book.addEventListener("click", () => {
   localStorage.setItem("packageType", `Custom (${packSelStr})`);
   window.location.href = "./form.html";
 });
+
+const displayr = document.querySelectorAll(".cuInputs");
+
+cuExpand.addEventListener("click",() => {
+  cuExpand.classList.add("hide")
+  cuFooter.style.height = "40%";
+})
+display.addEventListener("click",() => {
+  cuExpand.classList.remove("hide")
+  cuFooter.style.height = "0";
+});
+
+for(let m=0; m<displayr.length; m++)
+{
+  displayr[m].addEventListener("click",() => {
+    cuExpand.classList.remove("hide")
+    cuFooter.style.height = "0";
+  });
+}
+
