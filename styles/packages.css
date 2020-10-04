@@ -189,6 +189,11 @@ h2 {
   justify-content: center;
 }
 
+.buttons .custom {
+  padding: 5px 0.5rem;
+  margin-left: 2rem;
+}
+
 .buttons button:hover {
   cursor: pointer;
   background-color: #C0FF80;
