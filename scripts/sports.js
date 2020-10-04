@@ -152,7 +152,9 @@ searchBar.addEventListener("keyup", (e) => {
   const searchString = e.target.value;
 
   let sport = searchSport(searchString, sports);
-  build(sport);
+  build(filterSport(filter.value,sport));
+
+  
 });
 
 function searchSport(value, data) {
