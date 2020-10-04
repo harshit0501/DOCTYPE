@@ -2,6 +2,10 @@
   width: 8px;
 }
 
+::-webkit-scrollbar-track {
+  background: #444; 
+}
+
 ::-webkit-scrollbar-thumb {
   background: #cf9611;
   border-radius: 10px;
@@ -137,9 +141,6 @@ body, html {
   .card{
     height: 500px;
   }
-  body {
-    margin: 0 2%;
-  }
 }
 
 @media only screen and (max-width: 1080px) {
@@ -177,10 +178,6 @@ body, html {
     grid-template-columns: 1fr;
     padding: 0 5%;
   }
-  body {
-    margin-left: 2rem;
-    margin-right: 2rem;
-  }
   #searchWrapper{
     padding: 0 5%;
   }
@@ -193,9 +190,6 @@ body, html {
   .card{
     height: 450px;
   }
-  body {
-    margin: 0 2%;
-  }
 }
 
 @media only screen and (max-width: 375px) { 
@@ -204,9 +198,6 @@ body, html {
   }
   .card{
     height: 400px;
-  }
-  body {
-    margin: 0 2%;
   }
 }
 
