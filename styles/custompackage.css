@@ -1,0 +1,150 @@
+.cuContainer {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  width: 800px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+.cuInputs {
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: row;
+  width: 800px;
+  margin: 0 auto;
+  /* margin-bottom: 500px; */
+}
+
+.cuInputs .cuInpEle {
+  width: 100%;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 5px;
+  font-size: 1.25rem;
+  color: white;
+  text-align: center;
+  margin: 4px;
+  box-sizing: border-box;
+}
+
+#cuBook{
+      margin-bottom: 500px;
+  }
+
+.cuContainer li {
+  width: 100%;
+  border: 2px solid white;
+  list-style-type: none;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 1.25rem;
+  box-sizing: border-box;
+  /* background-color: #c0ff80; */
+  transition: background-color 0.5s;
+  transition: color 0.5s;
+}
+
+.cuSelected {
+  background-color: #c0ff80;
+  color: black;
+}
+
+/* .cuContainer .fa-plus{
+  } */
+
+.cuContainer .cuName {
+  width: 200px;
+}
+
+.cuContainer .hide {
+  display: none;
+}
+.cuContainer .cuCost {
+  padding-right: 10px;
+}
+
+#cuFooter {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #aaa;
+  color: #101010;
+  display: flex;
+}
+#cuFooter h2 {
+  float: left;
+  margin: 20px;
+  box-sizing: border-box;
+  width: 100%;
+  font-weight: 400;
+}
+#cuFooter h2 p {
+  float: left;
+  margin: 20px;
+  font-size: 1rem;
+  margin: 0;
+}
+.title{
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+@media (max-width: 1160px){
+    #cuFooter h2{
+        font-size: 1.4rem;
+        margin: 15px;
+    }
+    #cuFooter h2 p{
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 620px)
+{
+    #cuFooter h2{
+        font-size: 1rem;
+        margin: 15px;
+    }
+    #cuFooter h2 p{
+        font-size: 0.6rem;
+    }
+    .cuContainer li{
+        font-size: 1rem;
+    }
+    
+}
+@media (max-width: 698px)
+{
+    .title{
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 520px){
+    .title{
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 890px) {
+  .cuContainer {
+    width: 90%;
+  }
+  .cuContainer li {
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+  .cuInputs {
+    width: 90%;
+  }
+}
+
+@media (max-width: 450px) {
+  .cuInputs {
+    flex-direction: column;
+  }
+}

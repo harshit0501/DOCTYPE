@@ -4,10 +4,14 @@ let package = localStorage.getItem("package");
 const name1 = document.querySelector("#name1");
 const name2 = document.querySelector("#name2");
 const name3 = document.querySelector("#name3");
-if (package == 1) {
+if (package == 2) {
   name1.classList.remove("hide");
 }
-if (package == 2) {
+if (package == 3) {
+  name1.classList.remove("hide");
+  name2.classList.remove("hide");
+}
+if (package == 4) {
   name1.classList.remove("hide");
   name2.classList.remove("hide");
   name3.classList.remove("hide");
