@@ -25,11 +25,43 @@
   text-align: center;
   margin: 4px;
   box-sizing: border-box;
+  display: flex;
+}
+.cuInpEle h3 {
+  display: inline-flex;
+  float: left;
+  margin: 0;
+  padding-right: 4px;
+  padding-left: 4px;
+}
+#cuNoMember {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  border-left: 2px solid white;
+  outline: none;
+  text-align: center;
+  color: #fff;
+  font-size: 1.25rem;
+}
+#cuNoMonth {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  border-left: 2px solid white;
+  border-radius: 0;
+  outline: none;
+  text-align: center;
+  color: #fff;
+  font-size: 1.25rem;
+  margin: 0;
 }
 
-#cuBook{
-      margin-bottom: 500px;
-  }
+#cuBook {
+  margin-bottom: 500px;
+  display: block;
+  text-align: center;
+}
 
 .cuContainer li {
   width: 100%;
@@ -88,46 +120,43 @@
   font-size: 1rem;
   margin: 0;
 }
-.title{
-    margin-left: 8px;
-    margin-right: 8px;
+.title {
+  margin-left: 8px;
+  margin-right: 8px;
 }
 
-@media (max-width: 1160px){
-    #cuFooter h2{
-        font-size: 1.4rem;
-        margin: 15px;
-    }
-    #cuFooter h2 p{
-        font-size: 0.8rem;
-    }
+@media (max-width: 1160px) {
+  #cuFooter h2 {
+    font-size: 1.4rem;
+    margin: 15px;
+  }
+  #cuFooter h2 p {
+    font-size: 0.8rem;
+  }
 }
 
-@media (max-width: 620px)
-{
-    #cuFooter h2{
-        font-size: 1rem;
-        margin: 15px;
-    }
-    #cuFooter h2 p{
-        font-size: 0.6rem;
-    }
-    .cuContainer li{
-        font-size: 1rem;
-    }
-    
+@media (max-width: 620px) {
+  #cuFooter h2 {
+    font-size: 1rem;
+    margin: 15px;
+  }
+  #cuFooter h2 p {
+    font-size: 0.6rem;
+  }
+  .cuContainer li {
+    font-size: 1rem;
+  }
 }
-@media (max-width: 698px)
-{
-    .title{
-        font-size: 2.5rem;
-    }
+@media (max-width: 698px) {
+  .title {
+    font-size: 2.5rem;
+  }
 }
 
-@media (max-width: 520px){
-    .title{
-        font-size: 2rem;
-    }
+@media (max-width: 520px) {
+  .title {
+    font-size: 2rem;
+  }
 }
 
 @media (max-width: 890px) {
