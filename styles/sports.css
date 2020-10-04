@@ -174,20 +174,21 @@ html {
   padding: 5px 10px;
   font-size: 18px;
   background-color: #101010;
-  color: white;
+  color: whitesmoke;
   font-family: "Nunito Sans", sans-serif;
   text-align: center;
   padding: 5px 10px;
 }
-label{
-  width: 600px;
-  display: flex;
-  justify-content: center;
-}
+
 select {
   text-align: center;
   text-align-last: center;
 }
+
+option[value=""][disabled] {
+  color: grey;
+}
+
 
 #searchWrapper::after {
   position: absolute;

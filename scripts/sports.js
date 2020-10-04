@@ -148,7 +148,6 @@ const sports = [
 
 const searchBar = document.getElementById("searchBar");
 const filter = document.getElementById("filters");
-
 searchBar.addEventListener("keyup", (e) => {
   const searchString = e.target.value;
 
