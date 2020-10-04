@@ -11,6 +11,27 @@
   background: #e49619;
 }
 
+@-webkit-keyframes fadeIn {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
 
 body, html {
   background-color: #101010 !important;
@@ -25,6 +46,7 @@ body, html {
   grid-template-columns: 1.33fr 1.33fr 1.33fr;
   grid-gap: 2rem;
   padding: 0 10%;
+  
 }
 
 .title {
@@ -62,6 +84,11 @@ body, html {
   float: left;
   color:white;
   border-radius: 5%;
+}
+
+.card {
+  -webkit-animation: fadeIn 0.35s ease-in 0.25s backwards;
+          animation: fadeIn 0.35s ease-in 0.25s backwards;
 }
 
 .content {

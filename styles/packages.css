@@ -7,6 +7,28 @@ html {
   font-family: 'Nunito Sans', sans-serif;
 }
 
+@-webkit-keyframes fadeIn {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
 #container {
   display: grid;
   margin: 20px auto;
@@ -30,6 +52,11 @@ html {
   border-radius: 5%;
   transition: border 0.6s;
   position: relative;
+}
+
+.card {
+  -webkit-animation: fadeIn 0.35s ease-in 0.25s backwards;
+          animation: fadeIn 0.35s ease-in 0.25s backwards;
 }
 
 .content {
