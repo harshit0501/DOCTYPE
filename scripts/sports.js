@@ -147,6 +147,7 @@ const sports = [
 
 
 const searchBar = document.getElementById("searchBar");
+const filter = document.getElementById("filters");
 
 searchBar.addEventListener("keyup", (e) => {
   const searchString = e.target.value;
@@ -169,7 +170,39 @@ function searchSport(value, data) {
   return filteredSports;
 }
 
+filter.addEventListener('change', function () {
+    build(filterSport(filter.value, sports));
+})
+function filterSport(value, data) {
+    let filtersport = [];
+    if (value == "isTrainer") {
+        for (let i = 0; i < data.length; i++) {
+            if(data[i].isTrainer) {
+                filtersport.push(data[i]);
+            }
+        }
+    } else if(value == 'isGalaxo') {
+        for (let i = 0; i < data.length; i++) {
+          if (data[i].isGalaxoEarth) {
+            filtersport.push(data[i]);
+          }
+        }
+    } else if(value == 'isTrainerGalaxo') {
+        for (let i = 0; i < data.length; i++) {
+          if (data[i].isGalaxoEarth && data[i].isTrainer) {
+            filtersport.push(data[i]);
+          }
+        }  
+    } else {
+        filtersport = data;
+    }
+    return filtersport;
+    
+}
+
 build(sports);
+
+
 function build(data) {
   let sportcard = document.getElementById("container");
   sportcard.innerHTML = "";

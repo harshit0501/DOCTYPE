@@ -163,6 +163,12 @@ hr {
   .nav-buttons {
     display: inline;
   }
+  .nav-buttons:hover {
+    padding: 0 20px;
+    background-color: #C0FF80;
+    color: white;
+    border-color: #C0FF80;
+  }
 }
 
 @media (max-width: 40.625em) {
@@ -191,6 +197,12 @@ hr {
     padding: 0.1em 0.3em;
     border-radius: 0.3em;
   }
+  .nav-buttons:hover {
+    padding: 0 20px;
+    background-color: #C0FF80;
+    color: white;
+    border-color: #C0FF80;
+  }
   .container {
     font-size: 0.8rem;
   }
@@ -203,6 +215,12 @@ hr {
   .nav-buttons {
     padding: 0em 0.3em;
     border-radius: 0.3em;
+  }
+  .nav-buttons:hover {
+    padding: 0 20px;
+    background-color: #C0FF80;
+    color: white;
+    border-color: #C0FF80;
   }
 }
 
