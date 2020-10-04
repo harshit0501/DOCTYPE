@@ -172,6 +172,7 @@ function searchSport(value, data) {
 }
 
 filter.addEventListener('change', function () {
+    searchBar.value = "";
     build(filterSport(filter.value, sports));
 })
 function filterSport(value, data) {
