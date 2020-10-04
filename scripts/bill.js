@@ -14,12 +14,16 @@ let serTax  = localStorage.getItem("serTax");
 let GST     = localStorage.getItem("GST");
 let TotCost = localStorage.getItem("TotCost");
 let packageType = localStorage.getItem('packageType');
-console.log(packageType);
-if(package==1)
+if(package==2)
 {
     document.querySelector("#billName1").classList.remove("hide");
 }
-if(package==2)
+if(package==3)
+{
+    document.querySelector("#billName1").classList.remove("hide");
+    document.querySelector("#billName2").classList.remove("hide");
+}
+if(package==4)
 {
     document.querySelector("#billName1").classList.remove("hide");
     document.querySelector("#billName2").classList.remove("hide");
@@ -30,13 +34,14 @@ let date = d.getDate();
 let month = d.getMonth();
 let year = d.getFullYear();
 let endDate;
-if(time == 0) {
-    endDate = `${date}/${month+1}/${year+1}`;
-} else if(time == 1) {
-    if(month+2 > 12) {
-        endDate = `${date}/${month+2-12}/${year+1}`;
-    }
-    endDate = `${date}/${month + 2}/${year}`;
+time = Number(time);
+if(month+time+1>12)
+{
+    let x = (month+time+1)%12;
+    endDate = `${date}/${x}/${year+1}`
+}
+else{
+    endDate = `${date}/${(month+time+1)}/${year}`
 }
 document.querySelector("#billStartDate").textContent = `${date}/${month+1}/${year}`;
 document.querySelector("#billEndDate").textContent = endDate;

@@ -33,7 +33,7 @@ let co_month = [740, 600, 390, 370, 300, 190];
 let co_year = [8760, 7100, 4600, 4380, 3520, 2200];
 let fa_month = [1420, 1150, 750, 710, 550, 360];
 let fa_year = [16900, 13600, 8900, 8450, 6500, 4200];
-let ans = 0;
+let ans = 1;
 
 const buttonIndividual = document.querySelector(".individual");
 const buttonCouple = document.querySelector(".couple");
@@ -46,21 +46,21 @@ buttonCouple.addEventListener("click", function () {
   buttonCouple.classList.add("co_active");
   buttonIndividual.classList.remove("in_active");
   buttonFamily.classList.remove("fa_active");
-  ans = 1;
+  ans = 2;
   build(data, co_year, co_month);
 });
 buttonIndividual.addEventListener("click", function () {
   buttonCouple.classList.remove("co_active");
   buttonIndividual.classList.add("in_active");
   buttonFamily.classList.remove("fa_active");
-  ans = 0;
+  ans = 1;
   build(data, in_year, in_month);
 });
 buttonFamily.addEventListener("click", function () {
   buttonCouple.classList.remove("co_active");
   buttonIndividual.classList.remove("in_active");
   buttonFamily.classList.add("fa_active");
-  ans = 2;
+  ans = 4;
   build(data, fa_year, fa_month);
 });
 
@@ -103,25 +103,25 @@ function SendAmount(buttony, buttonm) {
   let amount;
   for (let k = 0; k < 5; k++) {
     buttony[k].addEventListener("click", function () {
-      if (ans === 0) {
+      if (ans == 1) {
         amount = in_year[k];
-      } else if (ans == 1) {
-        amount = co_year[k];
       } else if (ans == 2) {
+        amount = co_year[k];
+      } else if (ans == 4) {
         amount = fa_year[k];
       }
       localStorage.setItem("amount", amount);
       localStorage.setItem("package", ans);
-      localStorage.setItem("subscription", 0);
+      localStorage.setItem("subscription", 12);
       localStorage.setItem("packageType", data[k].name);
       window.location.href = "./form.html";
     });
     buttonm[k].addEventListener("click", function () {
-      if (ans === 0) {
+      if (ans == 1) {
         amount = in_month[k];
-      } else if (ans == 1) {
-        amount = co_month[k];
       } else if (ans == 2) {
+        amount = co_month[k];
+      } else if (ans == 4) {
         amount = fa_month[k];
       }
       localStorage.setItem("amount", amount);
