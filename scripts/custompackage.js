@@ -180,12 +180,18 @@ monthInp.addEventListener("change", () => {
 
 const book = document.querySelector("#cuBook");
 
-book.addEventListener("click", () => {
-  localStorage.setItem("amount", totalCost * multiplier);
-  localStorage.setItem("package", noMember);
-  localStorage.setItem("subscription", noMonth);
-  localStorage.setItem("packageType", `Custom (${packSelStr})`);
-  window.location.href = "./form.html";
+book.addEventListener("click", (e) => {
+  if(totalCost == 0) {
+    e.preventDefault();
+    alert('select a sport');
+  } else {
+    localStorage.setItem("amount", totalCost * multiplier);
+    localStorage.setItem("package", noMember);
+    localStorage.setItem("subscription", noMonth);
+    localStorage.setItem("packageType", `Custom (${packSelStr})`);
+    window.location.href = "./form.html";
+  }
+  
 });
 
 const displayr = document.querySelectorAll(".cuInputs");
