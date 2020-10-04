@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@500&family=Space+Mono&display=swap');
+
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -120,6 +122,10 @@ html {
       display: flex;
     }
   }
+  .head {
+    font-family: 'Space Mono', monospace;
+    text-transform: uppercase;
+  }
 
   form{
       display: flex;
@@ -158,6 +164,13 @@ html {
 
   .submit{
       border: 2px solid white;
+      cursor: pointer;
+  }
+
+  .submit:hover {
+    border-color: lightblue;
+    background-color: lightblue;
+    color: black;
   }
 
   .bill{

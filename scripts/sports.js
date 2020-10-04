@@ -1,6 +1,6 @@
 const sports = [
     {
-        sport: 'Bastketball',
+        sport: 'Basketball',
         image: '../resources/sports/basketball.jpeg',
         isTrainer: true,
         isGalaxoEarth: true

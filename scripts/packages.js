@@ -34,74 +34,72 @@ let co_year = [8760, 7100, 4600, 4380, 3520, 2200];
 let fa_month = [1420, 1150, 750, 710, 550, 360];
 let fa_year = [16900, 13600, 8900, 8450, 6500, 4200];
 let ans = 0;
-const header = document.querySelectorAll(".header");
-const price = document.querySelectorAll(".price");
-const month = document.querySelectorAll("#month");
-const year = document.querySelectorAll("#year");
-const description = document.querySelectorAll(".description");
-const buttonm = document.querySelectorAll(".btn");
-const buttony = document.querySelectorAll(".btny");
-const cards = document.querySelectorAll(".card");
+
 const buttonIndividual = document.querySelector(".individual");
 const buttonCouple = document.querySelector(".couple");
 const buttonFamily = document.querySelector(".family");
 let i;
 
-for (i = 0; i < 6; i++) {
-  header[i].textContent = data[i].name;
-  description[i].textContent = data[i].description;
-  month[i].textContent = `${in_month[i]}`;
-  year[i].textContent = `${in_year[i]}`;
-  price[i].style.color = in_color;
-  buttonm[i].style.backgroundColor = in_color;
-  buttony[i].style.backgroundColor = in_color;
-  cards[i].style.borderColor = in_color;
-}
+
 
 buttonCouple.addEventListener("click", function () {
   buttonCouple.classList.add("co_active");
   buttonIndividual.classList.remove("in_active");
   buttonFamily.classList.remove("fa_active");
   ans = 1;
-  for (i = 0; i < 6; i++) {
-    month[i].textContent = `${co_month[i]}`;
-    year[i].textContent = `${co_year[i]}`;
-    buttonm[i].style.backgroundColor = co_color;
-    buttony[i].style.backgroundColor = co_color;
-    cards[i].style.borderColor = co_color;
-    price[i].style.color = co_color;
-  }
+  build(data, co_year, co_month);
 });
 buttonIndividual.addEventListener("click", function () {
   buttonCouple.classList.remove("co_active");
   buttonIndividual.classList.add("in_active");
   buttonFamily.classList.remove("fa_active");
   ans = 0;
-  for (i = 0; i < 6; i++) {
-    month[i].textContent = `${in_month[i]}`;
-    year[i].textContent = `${in_year[i]}`;
-    buttonm[i].style.backgroundColor = in_color;
-    buttony[i].style.backgroundColor = in_color;
-    cards[i].style.borderColor = in_color;
-    price[i].style.color = in_color;
-  }
+  build(data, in_year, in_month);
 });
 buttonFamily.addEventListener("click", function () {
   buttonCouple.classList.remove("co_active");
   buttonIndividual.classList.remove("in_active");
   buttonFamily.classList.add("fa_active");
   ans = 2;
-  for (i = 0; i < 6; i++) {
-    month[i].textContent = `${fa_month[i]}`;
-    year[i].textContent = `${fa_year[i]}`;
-    buttonm[i].style.backgroundColor = fa_color;
-    buttony[i].style.backgroundColor = fa_color;
-    cards[i].style.borderColor = fa_color;
-    price[i].style.color = fa_color;
-  }
+  build(data, fa_year, fa_month);
 });
 
-function SendAmount() {
+build(data, in_year, in_month);
+function build(data, annual, monthly) {
+  let packageCard = document.getElementById("container");
+  packageCard.innerHTML = "";
+  
+
+  let i;
+  for(i=0;i< data.length; i++) {
+    let card = `<div class="card">
+      <h3 class="header">${data[i].name}</h3>
+      <div class="content">
+        <p class="description">${data[i].description}</p>
+        <div class="label">
+          <div class="price">
+            <h2>$ <span id="month">${monthly[i]}</span> / month</h2>
+            <h2>$ <span id="year">${annual[i]}</span> / year</h2>
+          </div>
+        </div>
+        <button class="btn">BOOK MONTHLY</button>
+        <button class="btny">BOOK YEARLY</button>
+      </div>
+    </div>`;
+    packageCard.innerHTML += card;
+    
+  }
+  const buttonm = document.querySelectorAll('.btn');
+  const buttony = document.querySelectorAll(".btny");
+  SendAmount(buttony, buttonm);
+}
+
+
+
+
+
+
+function SendAmount(buttony, buttonm) {
   let amount;
   for (let k = 0; k < 5; k++) {
     buttony[k].addEventListener("click", function () {
@@ -115,7 +113,8 @@ function SendAmount() {
       localStorage.setItem("amount", amount);
       localStorage.setItem("package", ans);
       localStorage.setItem("subscription", 0);
-       window.location.href = "./form.html";
+      localStorage.setItem("packageType", data[k].name);
+      window.location.href = "./form.html";
     });
     buttonm[k].addEventListener("click", function () {
       if (ans === 0) {
@@ -128,9 +127,10 @@ function SendAmount() {
       localStorage.setItem("amount", amount);
       localStorage.setItem("package", ans);
       localStorage.setItem("subscription", 1);
+      localStorage.setItem("packageType", data[k].name);
       window.location.href = "./form.html";
     });
   }
 }
   
-SendAmount();
+

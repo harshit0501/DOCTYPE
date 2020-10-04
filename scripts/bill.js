@@ -13,7 +13,8 @@ let planet  = localStorage.getItem("planet");
 let serTax  = localStorage.getItem("serTax");
 let GST     = localStorage.getItem("GST");
 let TotCost = localStorage.getItem("TotCost");
-
+let packageType = localStorage.getItem('packageType');
+console.log(packageType);
 if(package==1)
 {
     document.querySelector("#billName1").classList.remove("hide");
@@ -44,6 +45,7 @@ document.querySelector("#billNamee").textContent = Name;
 document.querySelector("#billName1").textContent = Name1;
 document.querySelector("#billName2").textContent = Name2;
 document.querySelector("#billName3").textContent = Name3;
+document.querySelector("#billPackage").textContent = packageType;
 document.querySelector("#billEmail").textContent = email;
 document.querySelector("#billHouseN").textContent = houseN;
 document.querySelector("#billSettleN").textContent = settleN;
