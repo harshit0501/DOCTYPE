@@ -41,8 +41,7 @@
 
 body,
 html {
-  /* background-color: #101010 !important; */
-  background-image: url('../resources/bg3.jpg');
+  background-image: url("../resources/bg3.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -56,6 +55,7 @@ html {
   grid-template-columns: 1.33fr 1.33fr 1.33fr;
   grid-gap: 2rem;
   padding: 0 10%;
+  padding-bottom: 50px;
 }
 
 .title {
@@ -192,7 +192,6 @@ option[value=""][disabled] {
   color: grey;
 }
 
-
 #searchWrapper::after {
   position: absolute;
   top: 7px;
@@ -232,7 +231,7 @@ option[value=""][disabled] {
   #filters {
     width: 90%;
   }
-  label{
+  label {
     width: 100%;
   }
   #filter {

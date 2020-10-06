@@ -6,7 +6,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 ::-webkit-scrollbar-track {
-  background: #444; 
+  background: #444;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -27,12 +27,10 @@ input[type="number"]::-webkit-inner-spin-button {
   margin-bottom: 30px;
 }
 .cuInputs {
-  /* padding-bottom: 30px; */
   display: flex;
   flex-direction: row;
   width: 800px;
   margin: 0 auto;
-  /* margin-bottom: 500px; */
 }
 
 .cuInputs p {
@@ -99,7 +97,6 @@ input[type="number"]::-webkit-inner-spin-button {
   margin-bottom: 10px;
   font-size: 1.25rem;
   box-sizing: border-box;
-  /* background-color: #c0ff80; */
   transition: background-color 0.5s;
   transition: color 0.5s;
 }
@@ -109,13 +106,9 @@ input[type="number"]::-webkit-inner-spin-button {
   color: black;
 }
 
-/* .cuContainer .fa-plus{
-  } */
-
 .cuContainer .cuName {
   width: 200px;
 }
-
 
 .cuContainer .cuCost {
   padding-right: 10px;
@@ -132,8 +125,7 @@ input[type="number"]::-webkit-inner-spin-button {
   opacity: 0.9;
   color: #101010;
   display: flex;
-  /* display: none; */
-  transition: max-height 1s,transform 1s;
+  transition: max-height 1s, transform 1s;
 }
 #cuFooter h2 {
   float: left;
@@ -157,7 +149,6 @@ input[type="number"]::-webkit-inner-spin-button {
   width: 90px;
   height: 90px;
   border-radius: 45px;
-  /* border: 2px solid white; */
   border: none;
   background-color: rgba(16, 16, 16, 0.9);
   position: fixed;
@@ -197,14 +188,14 @@ input[type="number"]::-webkit-inner-spin-button {
   .cuContainer li {
     font-size: 1rem;
   }
-  #cuExpand{
+  #cuExpand {
     width: 70px;
     height: 70px;
     border-radius: 35px;
     margin-top: -35px;
     margin-left: -35px;
   }
-  #cuExpand h3{
+  #cuExpand h3 {
     font-size: small;
   }
 }

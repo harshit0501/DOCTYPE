@@ -139,15 +139,13 @@ let memPlu = "";
 let monPlu = "";
 memberInp.addEventListener("change", () => {
   noMember = memberInp.value;
-  if(noMember>4) 
-  {
-    noMember=4;
-    memberInp.value=4;
+  if (noMember > 4) {
+    noMember = 4;
+    memberInp.value = 4;
   }
-  if(noMember<1) 
-  {
-    noMember=1;
-    memberInp.value=1;
+  if (noMember < 1) {
+    noMember = 1;
+    memberInp.value = 1;
   }
   if (noMember > 1) memPlu = "s";
   else memPlu = "";
@@ -159,15 +157,13 @@ memberInp.addEventListener("change", () => {
 });
 monthInp.addEventListener("change", () => {
   noMonth = monthInp.value;
-  if(noMonth>12) 
-  {
-    noMonth=12;
-    monthInp.value=12;
+  if (noMonth > 12) {
+    noMonth = 12;
+    monthInp.value = 12;
   }
-  if(noMonth<1) 
-  {
-    noMonth=1;
-    monthInp.value=1;
+  if (noMonth < 1) {
+    noMonth = 1;
+    monthInp.value = 1;
   }
   if (noMember > 1) memPlu = "s";
   else memPlu = "";
@@ -181,9 +177,9 @@ monthInp.addEventListener("change", () => {
 const book = document.querySelector("#cuBook");
 
 book.addEventListener("click", (e) => {
-  if(totalCost == 0) {
+  if (totalCost == 0) {
     e.preventDefault();
-    alert('Please Select An Item');
+    alert("Please Select An Item");
   } else {
     localStorage.setItem("amount", totalCost * multiplier);
     localStorage.setItem("package", noMember);
@@ -191,25 +187,22 @@ book.addEventListener("click", (e) => {
     localStorage.setItem("packageType", `Custom (${packSelStr})`);
     window.location.href = "./form.html";
   }
-  
 });
 
 const displayr = document.querySelectorAll(".cuInputs");
 
-cuExpand.addEventListener("click",() => {
-  cuExpand.classList.add("hide")
+cuExpand.addEventListener("click", () => {
+  cuExpand.classList.add("hide");
   cuFooter.style.maxHeight = "280px";
-})
-display.addEventListener("click",() => {
-  cuExpand.classList.remove("hide")
+});
+display.addEventListener("click", () => {
+  cuExpand.classList.remove("hide");
   cuFooter.style.maxHeight = "0";
 });
 
-for(let m=0; m<displayr.length; m++)
-{
-  displayr[m].addEventListener("click",() => {
-    cuExpand.classList.remove("hide")
+for (let m = 0; m < displayr.length; m++) {
+  displayr[m].addEventListener("click", () => {
+    cuExpand.classList.remove("hide");
     cuFooter.style.maxHeight = "0";
   });
 }
-

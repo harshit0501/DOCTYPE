@@ -3,7 +3,7 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: #444; 
+  background: #444;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -24,7 +24,7 @@ html {
   background-color: #101010;
   font-family: "Roboto", sans-serif;
   color: white;
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: "Nunito Sans", sans-serif;
 }
 
 .nav-things {
@@ -35,7 +35,7 @@ html {
   padding-top: 15px;
 }
 
-.nav-button{
+.nav-button {
   background-color: transparent;
   color: white;
   border: none;
@@ -45,15 +45,15 @@ html {
   font-weight: bold;
 }
 
-.fa-undo-alt{
+.fa-undo-alt {
   font-size: 0.8em;
 }
 
-.nav-button a{
+.nav-button a {
   color: white;
   text-decoration: none;
 }
-.nav-button a:hover{
+.nav-button a:hover {
   color: #aaa;
 }
 
@@ -61,7 +61,7 @@ html {
   width: 600px;
   border: 2px solid #fff;
   color: white;
-  display:  block;
+  display: block;
   margin: 0 auto;
   margin-top: 15px;
   padding-left: 15px;
@@ -81,15 +81,15 @@ html {
   margin: 1px;
 }
 
-.bill a{
+.bill a {
   color: steelblue;
 }
-.bill a:hover{
+.bill a:hover {
   color: #aaa;
 }
 
-.hide{
-    display: none;
+.hide {
+  display: none;
 }
 
 @media (max-width: 420px) {

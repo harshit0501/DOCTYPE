@@ -3,7 +3,7 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: #444; 
+  background: #444;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -21,9 +21,9 @@ html {
   width: 100%;
   padding: 0;
   margin: 0;
-  font-family: 'Roboto', sans-serif;
-  background-color:#101010;
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: "Roboto", sans-serif;
+  background-color: #101010;
+  font-family: "Nunito Sans", sans-serif;
 }
 .navbar {
   background-color: #101010;
@@ -52,7 +52,7 @@ a {
   color: #fff;
 }
 a:hover {
-  color: #AAA;
+  color: #aaa;
 }
 .nav-right {
   float: right;
@@ -82,16 +82,16 @@ a:hover {
 }
 
 hr.style {
-  color:white; 
-  border: 0; 
-  height: 1px; 
+  color: white;
+  border: 0;
+  height: 1px;
   background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
   background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
   background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
-  background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0); 
+  background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
 }
 
-#backgg{
+#backgg {
   background-image: url(../resources/about2.jpg);
   height: 50%;
   background-repeat: no-repeat;
@@ -117,11 +117,11 @@ hr.style {
     0px 18px 23px rgba(0, 0, 0, 0.1);
 }
 
-#buttons{
+#buttons {
   display: flex;
   margin: 0 auto;
   justify-content: center;
-  background-color:  transparent;
+  background-color: transparent;
 }
 
 .nav-buttons {
@@ -143,8 +143,6 @@ hr.style {
   color: #101010;
 }
 
-
-
 .container {
   padding-right: 15px;
   padding-left: 15px;
@@ -155,17 +153,11 @@ hr.style {
   color: #fff;
 }
 
-hr {
-  border: 0;
-  height: 1px;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
-}
-
 @media (max-width: 56.25em) {
   #landing-header {
     font-size: 1.5rem;
   }
-  .container h1{
+  .container h1 {
     font-size: 2.25rem;
   }
 }
@@ -179,9 +171,9 @@ hr {
   }
   .nav-buttons:hover {
     padding: 0 20px;
-    background-color: #C0FF80;
+    background-color: #c0ff80;
     color: white;
-    border-color: #C0FF80;
+    border-color: #c0ff80;
   }
 }
 
@@ -189,7 +181,7 @@ hr {
   #landing-header {
     font-size: 1.3rem;
   }
-  .container h1{
+  .container h1 {
     font-size: 1.75rem;
   }
 }
@@ -213,14 +205,14 @@ hr {
   }
   .nav-buttons:hover {
     padding: 0 20px;
-    background-color: #C0FF80;
+    background-color: #c0ff80;
     color: white;
-    border-color: #C0FF80;
+    border-color: #c0ff80;
   }
   .container {
     font-size: 0.8rem;
   }
-  .container h1{
+  .container h1 {
     font-size: 1.4rem;
   }
 }
@@ -232,12 +224,11 @@ hr {
   }
   .nav-buttons:hover {
     padding: 0 20px;
-    background-color: #C0FF80;
+    background-color: #c0ff80;
     color: white;
-    border-color: #C0FF80;
+    border-color: #c0ff80;
   }
 }
-
 
 @media (min-width: 768px) {
   .container {
@@ -255,9 +246,9 @@ hr {
   }
 }
 
-#gesports a{
+#gesports a {
   text-decoration: underline;
 }
-#gesports a:hover{
+#gesports a:hover {
   color: #666666;
 }

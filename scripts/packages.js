@@ -4,28 +4,33 @@ let fa_color = "#40C040";
 const data = [
   {
     name: "Platinum",
-    description: "The package includes all sports and Spa facility. GalaxoEarth included."
+    description:
+      "The package includes all sports and Spa facility. GalaxoEarth included.",
   },
   {
     name: "Gold",
-    description: "The package includes all sports except Swimming and Spa. GalaxoEarth included"
+    description:
+      "The package includes all sports except Swimming and Spa. GalaxoEarth included",
   },
   {
     name: "Silver",
-    description: "The package includes all sports except Swimming and Spa. GalxoEarth not included"
+    description:
+      "The package includes all sports except Swimming and Spa. GalxoEarth not included",
   },
   {
     name: "Gym and swim Gold",
-    description: "The package includes Gym, Spa and Swimming. GalaxoEarth not included",
+    description:
+      "The package includes Gym, Spa and Swimming. GalaxoEarth included",
   },
   {
     name: "gym and swim",
-    description: "The package includes Gym, Spa and Swimming. GalaxoEarth not included",
+    description:
+      "The package includes Gym, Spa and Swimming. GalaxoEarth not included",
   },
   {
     name: "Gym-only",
     description: "The package includes Gym Only. GalaxoEarth included.",
-  }
+  },
 ];
 let in_month = [380, 310, 210, 200, 160, 100];
 let in_year = [4500, 3650, 2450, 2320, 1880, 1150];
@@ -39,8 +44,6 @@ const buttonIndividual = document.querySelector(".individual");
 const buttonCouple = document.querySelector(".couple");
 const buttonFamily = document.querySelector(".family");
 let i;
-
-
 
 buttonCouple.addEventListener("click", function () {
   buttonCouple.classList.add("co_active");
@@ -68,10 +71,9 @@ build(data, in_year, in_month);
 function build(data, annual, monthly) {
   let packageCard = document.getElementById("container");
   packageCard.innerHTML = "";
-  
 
   let i;
-  for(i=0;i< data.length; i++) {
+  for (i = 0; i < data.length; i++) {
     let card = `<div class="card">
       <h3 class="header">${data[i].name}</h3>
       <div class="content">
@@ -87,21 +89,15 @@ function build(data, annual, monthly) {
       </div>
     </div>`;
     packageCard.innerHTML += card;
-    
   }
-  const buttonm = document.querySelectorAll('.btn');
+  const buttonm = document.querySelectorAll(".btn");
   const buttony = document.querySelectorAll(".btny");
   SendAmount(buttony, buttonm);
 }
 
-
-
-
-
-
 function SendAmount(buttony, buttonm) {
   let amount;
-  for (let k = 0; k < 5; k++) {
+  for (let k = 0; k < 6; k++) {
     buttony[k].addEventListener("click", function () {
       if (ans == 1) {
         amount = in_year[k];
@@ -132,5 +128,3 @@ function SendAmount(buttony, buttonm) {
     });
   }
 }
-  
-
