@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Prompt:wght@500&family=Space+Mono&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@500&family=Space+Mono&display=swap');
 
 ::-webkit-scrollbar {
   width: 8px;
@@ -23,15 +23,15 @@ html {
   width: 100%;
   padding: 0;
   margin: 0;
-  background-image: url("../resources/bg3.jpg");
+  background-image: url('../resources/bg3.jpg');
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: white;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
 }
 .navbar {
   background-color: #101010;
@@ -128,7 +128,7 @@ html {
   }
 }
 .head {
-  font-family: "Space Mono", monospace;
+  font-family: 'Space Mono', monospace;
   text-transform: uppercase;
 }
 

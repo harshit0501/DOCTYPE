@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Prompt:wght@500&family=Space+Mono&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@500&family=Space+Mono&display=swap');
 
 ::-webkit-scrollbar {
   width: 8px;
@@ -41,7 +41,7 @@
 
 body,
 html {
-  background-image: url("../resources/bg3.jpg");
+  background-image: url('../resources/bg3.jpg');
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -62,7 +62,7 @@ html {
   text-align: center;
   color: white;
   font-size: 3.5rem;
-  font-family: "Space Mono", monospace;
+  font-family: 'Space Mono', monospace;
   text-transform: uppercase;
   letter-spacing: 0.3rem;
 }
@@ -147,7 +147,7 @@ html {
   font-size: 18px;
   background-color: #101010;
   color: white;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
   text-align: center;
 }
 
@@ -178,7 +178,7 @@ html {
   font-size: 18px;
   background-color: #101010;
   color: whitesmoke;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
   text-align: center;
   padding: 5px 10px;
 }
@@ -188,7 +188,7 @@ select {
   text-align-last: center;
 }
 
-option[value=""][disabled] {
+option[value=''][disabled] {
   color: grey;
 }
 

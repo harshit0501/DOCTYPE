@@ -5,7 +5,7 @@ html {
   padding: 0;
   margin: 0;
   background-color: #000;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
 }
 .navbar {
   background-color: rgba(200, 200, 200, 0.5);
@@ -91,7 +91,7 @@ a:hover {
 }
 .nav-buttons a {
   color: #ffffff;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 .nav-buttons a:hover {
   color: rgba(0, 0, 0, 0.7);
